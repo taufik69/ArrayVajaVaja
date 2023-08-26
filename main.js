@@ -105,3 +105,14 @@
 
 // let finalResult = sumOfMatrix(matrixA, matrixB);
 // console.log(finalResult);
+
+let arr = [10, 40];
+// arr.push()
+// arr.pop()
+// arr.unshift()
+// arr.shift()
+
+
+// ----> nesting array breaking method instead of spread operator 
+// Array.prototype.push.apply(another array which you want to break)
+
