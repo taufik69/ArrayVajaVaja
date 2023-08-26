@@ -50,3 +50,58 @@
 //   const result = element(a, b);
 //   console.log(`${functionName} = ${result}`);
 // }
+
+// -----------> Nested or two dimentional Array
+
+// let TwoD = [
+//   [1, 2],
+//   [3, 5],
+//   [6, 7],
+//   [10, 11, 13, 14],
+// ];
+
+// for (let i = 0; i < TwoD.length; i++) {
+//   // console.log(`array X: ${TwoD[i][0]} Y: ${TwoD[i][1]}`);
+//   for (let j = 0; j < TwoD[i].length; j++) {
+//     console.log(`[${TwoD[i][j]}]`);
+//   }
+// }
+
+// ---> play with star in nested array
+// console.log("stars \n".repeat(4));
+
+// for (let i = 1; i <= 5; i++) {
+//   for (let j = 0; j < i; j++) {
+//     let stars = "*".repeat(i);
+//     console.log(stars);
+//   }
+
+// }
+// ----> matrix sum vai loop
+
+// let matrixA = [
+//   [1, 2],
+//   [3, 5],
+//   [6, 7],
+// ];
+
+// let matrixB = [
+//   [1, 2],
+//   [3, 5],
+//   [6, 7],
+// ];
+
+// function sumOfMatrix(matrixA, matrixB) {
+//   let result = [];
+//   for (let i = 0; i < matrixA.length; i++) {
+//     let matrixAll = [];
+//     for (let j = 0; j < matrixA[i].length; j++) {
+//       matrixAll.push(matrixA[i][j] + matrixB[i][j]);
+//     }
+//     result.push(matrixAll);
+//   }
+//   return result;
+// }
+
+// let finalResult = sumOfMatrix(matrixA, matrixB);
+// console.log(finalResult);
