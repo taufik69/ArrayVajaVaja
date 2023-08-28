@@ -106,13 +106,20 @@
 // let finalResult = sumOfMatrix(matrixA, matrixB);
 // console.log(finalResult);
 
-let arr = [10, 40];
+// let arr = [10, 40];
 // arr.push()
 // arr.pop()
 // arr.unshift()
 // arr.shift()
 
-
-// ----> nesting array breaking method instead of spread operator 
+// ----> nesting array breaking method instead of spread operator
 // Array.prototype.push.apply(another array which you want to break)
+// let arr = [10, 40, [12, "taufik"]];
+// console.log("array in array : ", ...arr);
+
+// -----> this is spreading method before spred ... operator arrived
+// let arr = [10, 40];
+// let arr2 = [30, 50];
+// Array.prototype.push.apply(arr, arr2);
+// console.log(arr);
 
