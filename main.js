@@ -107,10 +107,6 @@
 // console.log(finalResult);
 
 // let arr = [10, 40];
-// arr.push()
-// arr.pop()
-// arr.unshift()
-// arr.shift()
 
 // ----> nesting array breaking method instead of spread operator
 // Array.prototype.push.apply(another array which you want to break)
@@ -122,4 +118,75 @@
 // let arr2 = [30, 50];
 // Array.prototype.push.apply(arr, arr2);
 // console.log(arr);
+
+// --->  unshift by es6 and previous version
+
+// let arr1 = [10, 30, 50];
+// let arr2 = [100, 300, 500];
+// arr1.unshift(...arr2);
+// console.log("arr1 : ", arr1);
+
+// Array.prototype.unshift.apply(arr1, arr2);
+// console.log("arr1 is : ", arr1);
+
+// ---> splice method in array :
+
+// let arr2 = [100, 300, 500];
+// let arr3 = [10, 30, 50];
+// arr2.splice(1, 0, 10);
+// arr2.splice(3, 0, 10, 30, 60);
+// arr2.splice(3, 0, arr3);
+// arr2.splice(3, 0, ...arr3);
+// console.log("after applying arr2 splice method : ", arr2);
+
+// -----> array of object
+
+// find one and update
+
+// let student = [
+//   { id: 1, name: "taufik" },
+//   { id: 2, name: "islam" },
+//   { id: 3, name: "jame" },
+//   { id: 4, name: "mohon" },
+// ];
+
+// let givenArray = 3;
+// let updatedElement = "hello";
+
+// for (i = 0; i < student.length; i++) {
+//   if (givenArray === student[i].id) {
+//     student[i].name = updatedElement;
+// break;
+//   }
+// }
+// console.log(student);
+
+// ----> find one and push  in array on object
+
+// let student = [
+//   { id: 1, name: "taufik" },
+//   { id: 2, name: "islam" },
+//   { id: 3, name: "jame" },
+//   { id: 4, name: "mohon" },
+// ];
+
+// let addText = "hello jonogon";
+
+// for (i = 0; i < student.length; i++) {
+//   if (student.length === student[i].id) {
+//     student[i].name = addText;
+// break
+//   }
+// }
+// console.log(student);
+
+// ----> delete element in splice method
+
+// let arr = [19, 34, 423, 35];
+// arr.splice(1, 1);
+// console.log(arr);
+
+// ----------->  Array filter method
+
+let arr = [19, 34, 423, 35];
 
