@@ -239,3 +239,16 @@
 // const fruits = ["Apple", "Orange", "Apple", "Mango"];
 // let index = fruits.lastIndexOf("Apple");
 // console.log(index);
+
+// -----> little bit problem
+
+// var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// for (i = 0; i < fruits.length; i++) {
+//   let newrr = fruits[i].toUpperCase();
+//   console.log(newrr);
+// }
+
+// const myArr = new Int8Array(1220);
+// let unit = new Uint8ClampedArray(10000);
+// console.log(myArr);
+// console.log(unit);
