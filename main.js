@@ -225,3 +225,17 @@
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // let text = fruits.join(" and ");
 // console.log(text);
+
+// -----> key method
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const keys = fruits.keys();
+// for (x of keys) {
+//   console.log("x", x);
+// }
+
+// ------> last index method
+
+// const fruits = ["Apple", "Orange", "Apple", "Mango"];
+// let index = fruits.lastIndexOf("Apple");
+// console.log(index);
