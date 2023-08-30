@@ -188,5 +188,40 @@
 
 // ----------->  Array filter method
 
-let arr = [19, 34, 423, 35];
+// let arr = [19, 34, 423, 35];
+// console.log(arr.__proto__.constructor);
 
+// ----> Array entries method woriking principle
+
+// let arr = [19, 34, 423, 35];
+
+// let newarr = arr.entries();
+// for (a of newarr) {
+//   console.log(a);
+// }
+
+// ---> fill method in array
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.fill("Kiwi", 2, 3);
+// console.log("fruits: ", fruits);
+
+// -----> array flat method :
+// const myArr = [1, 2, [3, [4, 5, 6], 7], 8];
+// const newArr = myArr.flat(2);
+// console.log(newArr);
+
+// ---> Array from method
+
+// let newArr = Array.from("taufik");
+// console.log(newArr);
+
+// ---> inclueds method in array
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// console.log(fruits.includes("Banana", 3));
+
+// ----> join method in array
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let text = fruits.join(" and ");
+// console.log(text);
