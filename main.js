@@ -269,25 +269,21 @@
 
 // -----> write keyboarad and see my browser
 
-let wholebody = document.querySelector(".wholebody");
-let p = document.createElement("p");
-let text = [];
-window.addEventListener("keypress", (e) => {
-  //   console.log(e);
-  if (e.key === "Delete") {
-    text.pop();
-    // console.log("from this pat", text);
-    p.innerHTML = text.join("");
-  } else {
-    // console.log("from else", text);
-    wholebody.append(p);
-    text.push(e.key);
-    p.innerHTML = text.join("");
-  }
-});
+// let wholebody = document.querySelector(".wholebody");
+// let p = document.createElement("p");
+// let text = [];
+// window.addEventListener("keypress", (e) => {
+//   console.log(e);
+//   if (e.key === "Delete") {
+//     text.pop();
+// console.log("from this pat", text);
+//     p.innerHTML = text.join("");
+//   } else {
+// console.log("from else", text);
+//     wholebody.append(p);
+//     text.push(e.key);
+//     p.innerHTML = text.join("");
+//   }
+// });
 
-p.addEventListener("click", (e) => {
-  let editableTag = e.target;
-  editableTag.setAttribute("contenteditable", true);
-  console.log(editableTag);
-});
+// ----> Now back to js Array
