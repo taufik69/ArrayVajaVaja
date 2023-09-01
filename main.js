@@ -252,3 +252,20 @@
 // let unit = new Uint8ClampedArray(10000);
 // console.log(myArr);
 // console.log(unit);
+
+// ----------> home made error
+// try {
+//   let errorHouse = {
+//     nam: "taufik tor nai tai error ",
+//     age: 24,
+//     district: "joypurhat",
+//     maritual_Status: false,
+//   };
+//   if (10 == 10) {
+//     throw errorHouse;
+//   }
+// } catch (err) {
+//   console.log(err);
+// }
+
+
