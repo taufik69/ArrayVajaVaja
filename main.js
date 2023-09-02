@@ -253,6 +253,7 @@
 // console.log(myArr);
 // console.log(unit);
 
+<<<<<<< HEAD
 // ----------> home made error
 // try {
 //   let errorHouse = {
@@ -269,3 +270,39 @@
 // }
 
 
+=======
+// -----> make a random color genenor
+// const Wholebody = document.querySelector("body");
+// const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// window.addEventListener("mousemove", (e) => {
+//   const randomLetter =
+//     alphabet[Math.floor(Math.random() * alphabet.length)].toLocaleLowerCase();
+//   console.log(Math.floor());
+//   console.log(Math.floor());
+//   // Wholebody.style.backgroundColor = `#${randomLetter}${e.clientX}` ;
+//   Wholebody.style.backgroundColor = `rgb(${e.clientY / 5}, ${e.clientX / 5}, ${
+//     e.clientX / 9
+//   })`;
+// });
+
+// -----> write keyboarad and see my browser
+
+// let wholebody = document.querySelector(".wholebody");
+// let p = document.createElement("p");
+// let text = [];
+// window.addEventListener("keypress", (e) => {
+//   console.log(e);
+//   if (e.key === "Delete") {
+//     text.pop();
+// console.log("from this pat", text);
+//     p.innerHTML = text.join("");
+//   } else {
+// console.log("from else", text);
+//     wholebody.append(p);
+//     text.push(e.key);
+//     p.innerHTML = text.join("");
+//   }
+// });
+
+// ----> Now back to js Array
+>>>>>>> 6014503447665021c4399687c70588be7791c395
