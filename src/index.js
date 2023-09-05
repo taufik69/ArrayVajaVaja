@@ -4,16 +4,15 @@ const Todo = require("./Todo");
 const { log } = require("console");
 const { saveFiles, readFiles } = require("./utils");
 const { ADD, UPDATE, DONE, NEXT, LIST, FIND } = require("./commnad");
-const { readFileSync, readFile } = require("fs");
 
 const fileName = "../data.json";
 const filePath = path.resolve(__dirname, fileName);
 
 (function () {
-  const data = readFileSync(filePath, "utf-8") || [];
+  const data = readFiles(filePath) || [];
   const todo = new Todo(data);
   const { _: baseCommand } = argv;
-  // log("command ", argv);
+  // log("command ", data);
   switch (baseCommand[0]) {
     case ADD: {
       todo.addItem(argv.text);
@@ -29,12 +28,13 @@ const filePath = path.resolve(__dirname, fileName);
     }
     case NEXT: {
       const item = todo.next();
-      console.log(`---> ${item.id}-${item.text} [${item.created}]`);
+      const {id , text , created } = item;
+      console.log(`---> ${id}-${text} [${created}]`);
       break;
     }
     case DONE: {
       todo.done();
-      console.log("one item completed ");
+      console.log("Frist  item Deleted completed ");
       saveFiles(todo.todoList, filePath);
       break;
     }

@@ -3,6 +3,8 @@
  *
  */
 
+const { log } = require("console");
+
 function genareId(arr) {
   if (arr.length === 0) {
     return 1;
@@ -23,11 +25,7 @@ function genareId(arr) {
 
 class Todo {
   constructor(todoList = []) {
-    if (todoList.length === 0) {
-      this.todoList = todoList;
-    } else {
-      this.todoList = JSON.parse(todoList);
-    }
+    this.todoList = todoList;
   }
 
   /**
@@ -41,7 +39,6 @@ class Todo {
       id: genareId(this.todoList),
       created: `${date.getMonth()}-${date.getDate()}-${date.getFullYear()}`,
     };
-    console.log("Date is : ", item.created);
     this.todoList.push(item);
   }
 
@@ -69,7 +66,8 @@ class Todo {
    *@this is next Method . this method principle array retuned the frist element;
    */
   next() {
-    return this.todoList[0];
+    log("Last positon is -->", this.todoList.length);
+    return this.todoList[this.todoList.length - 1];
   }
 
   /**
@@ -83,10 +81,11 @@ class Todo {
    *@this is find Method . this method principle find the item or element entire the array ;
    */
 
-  find(term ) {
+  find(term) {
     let result = [];
+    // log("search item: ", term.toLowerCase());
     for (let i = 0; i < this.todoList.length; i++) {
-      const item = this.todoList[i];
+      let item = this.todoList[i];
       if (item.text.toLowerCase() === term.toLowerCase()) {
         result.push(item);
       }
