@@ -268,5 +268,30 @@
 //   console.log(err);
 // }
 
+// const ADD = "add";
+// const UPDATE = "update";
+// const DONE = "done";
+// const NEXT = "next";
+// const LIST = "list";
+// const FIND = "find";
 
-
+// switch (ADD) {
+//   case ADD: {
+//     console.log(ADD);
+//   }
+//   case UPDATE: {
+//     console.log(UPDATE);
+//   }
+//   case DONE: {
+//     console.log(DONE);
+//   }
+//   case NEXT: {
+//     console.log(NEXT);
+//   }
+//   case LIST: {
+//     console.log(LIST);
+//   }
+//   case FIND: {
+//     console.log(FIND);
+//   }
+// }
