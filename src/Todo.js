@@ -50,7 +50,7 @@ class Todo {
    */
 
   update(id, text) {
-    for (let i = 0; i < todoList.length; i++) {
+    for (let i = 0; i < this.todoList.length; i++) {
       if (this.todoList[i].id === id) {
         this.todoList[i].text = text;
         break;
@@ -83,7 +83,7 @@ class Todo {
    *@this is find Method . this method principle find the item or element entire the array ;
    */
 
-  find(term) {
+  find(term ) {
     let result = [];
     for (let i = 0; i < this.todoList.length; i++) {
       const item = this.todoList[i];
