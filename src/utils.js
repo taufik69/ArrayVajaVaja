@@ -12,7 +12,8 @@ module.exports.saveFiles = (data, fileName) => {
 
 module.exports.readFiles = (fileName) => {
   try {
-    fs.writeFileSync(fileName, "utf-8");
+    let data = fs.writeFileSync(fileName, "utf-8");
+    return data && JSON.parse(data);
   } catch (error) {
     log(error.message);
     throw new Error(error);

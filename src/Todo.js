@@ -5,6 +5,8 @@
 
 function genareId(arr) {
   if (arr.length === 0) {
+    return 1;
+  } else {
     return arr[arr.length - 1].id + 1;
   }
 }
@@ -22,6 +24,7 @@ function genareId(arr) {
 class Todo {
   constructor(todoList = []) {
     this.todoList = todoList;
+    console.log("constructor ", typeof this.todoList);
   }
   /**
    *@this is additem Method;
@@ -29,7 +32,7 @@ class Todo {
 
   addItem(text) {
     const item = {
-      text,
+      text: text,
       id: genareId(this.todoList),
       created: Date.now(),
     };
@@ -82,7 +85,7 @@ class Todo {
         result.push(item);
       }
     }
-    // return result;
+    return result;
   }
 }
 
