@@ -23,19 +23,25 @@ function genareId(arr) {
 
 class Todo {
   constructor(todoList = []) {
-    this.todoList = todoList;
-    console.log("constructor ", typeof this.todoList);
+    if (todoList.length === 0) {
+      this.todoList = todoList;
+    } else {
+      this.todoList = JSON.parse(todoList);
+    }
   }
+
   /**
    *@this is additem Method;
    */
 
-  addItem(text) {
+  addItem(text = "taufik") {
+    const date = new Date();
     const item = {
       text: text,
       id: genareId(this.todoList),
-      created: Date.now(),
+      created: `${date.getMonth()}-${date.getDate()}-${date.getFullYear()}`,
     };
+    console.log("Date is : ", item.created);
     this.todoList.push(item);
   }
 
