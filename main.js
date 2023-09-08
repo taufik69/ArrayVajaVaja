@@ -4,6 +4,8 @@
 //   console.log(arr1.fill("taufik"));
 // }
 
+const { home } = require("nodemon/lib/utils");
+
 // let fillUpArray = arr1.fill("taufik");
 
 // for (let i = 0; i < arr1.length; i++) {
@@ -295,3 +297,65 @@
 //     console.log(FIND);
 //   }
 // }
+
+// ----> Make a array desk
+
+const max_size = 10;
+class stack {
+  constructor() {
+    this.list = new Array(max_size);
+    this.top = -1;
+  }
+
+  push(item) {
+    if (this.top >= max_size) {
+      console.log("stack overflow ");
+      return false;
+    } else {
+      this.list[++this.top] = item;
+      console.log(this.list);
+      return true;
+    }
+  }
+  pop() {
+    if (this.isArrayEmpty()) {
+      console.log("stack underflow");
+      return false;
+    } else {
+      delete this.list[this.top];
+      this.top--;
+      console.log("deleted:", this.top);
+      console.log("popitem", this.list);
+      return true;
+    }
+  }
+  peek() {
+    if (this.isArrayEmpty()) {
+      console.log("stack underflow");
+      return false;
+    } else {
+      return this.list[this.top];
+    }
+  }
+  isArrayEmpty() {
+    return this.top < 0 ? "true" : false;
+  }
+}
+
+// Now crate instance of stack class
+const homemadeArray = new stack();
+
+// push the item in homemade array.
+console.log(homemadeArray.push("taufik"));
+console.log(homemadeArray.push("Mithila"));
+
+// pop the array is homemader array
+// console.log(homemadeArray.pop());
+// console.log(homemadeArray.pop());
+
+//---> use peek method in homemade array
+
+// console.log("peeK :", homemadeArray.peek());
+
+// ---> check aray is empty or not :
+console.log(homemadeArray.isArrayEmpty());
