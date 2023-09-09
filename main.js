@@ -343,11 +343,11 @@ class stack {
 }
 
 // Now crate instance of stack class
-const homemadeArray = new stack();
+// const homemadeArray = new stack();
 
-// push the item in homemade array.
-console.log(homemadeArray.push("taufik"));
-console.log(homemadeArray.push("Mithila"));
+// // push the item in homemade array.
+// console.log(homemadeArray.push("taufik"));
+// console.log(homemadeArray.push("Mithila"));
 
 // pop the array is homemader array
 // console.log(homemadeArray.pop());
@@ -358,4 +358,4 @@ console.log(homemadeArray.push("Mithila"));
 // console.log("peeK :", homemadeArray.peek());
 
 // ---> check aray is empty or not :
-console.log(homemadeArray.isArrayEmpty());
+// console.log(homemadeArray.isArrayEmpty());
