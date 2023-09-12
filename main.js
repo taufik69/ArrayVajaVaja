@@ -4,8 +4,6 @@
 //   console.log(arr1.fill("taufik"));
 // }
 
-const { home } = require("nodemon/lib/utils");
-
 // let fillUpArray = arr1.fill("taufik");
 
 // for (let i = 0; i < arr1.length; i++) {
@@ -301,7 +299,7 @@ const { home } = require("nodemon/lib/utils");
 // ----> Make a array desk
 
 const max_size = 10;
-class stack {
+class Stack {
   constructor() {
     this.list = new Array(max_size);
     this.top = -1;
@@ -313,7 +311,7 @@ class stack {
       return false;
     } else {
       this.list[++this.top] = item;
-      console.log(this.list);
+      // console.log(this.list);
       return true;
     }
   }
@@ -324,9 +322,9 @@ class stack {
     } else {
       delete this.list[this.top];
       this.top--;
-      console.log("deleted:", this.top);
-      console.log("popitem", this.list);
-      return true;
+      // console.log("deleted:", this.top);
+      // console.log("popitem", this.list);
+      return this.list[++this.top];
     }
   }
   peek() {
@@ -341,6 +339,8 @@ class stack {
     return this.top < 0 ? "true" : false;
   }
 }
+
+module.exports = Stack;
 
 // Now crate instance of stack class
 // const homemadeArray = new stack();
