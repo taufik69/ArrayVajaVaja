@@ -360,5 +360,68 @@
 // ---> check aray is empty or not :
 // console.log(homemadeArray.isArrayEmpty());
 
+// The next project are arrived this is queue concept
 
-// The next project are arrived
+/**
+ * todo: when you have to make Queue . thata algorith has 2 variable
+ * ? one is fornt and others is rear and definately need an array
+ */
+
+const Max_Size = 10;
+class Queue {
+  constructor() {
+    this.front = 0;
+    this.rear = 0;
+    this.queue = new Array(Max_Size);
+  }
+
+  // enQueue means add entities in existing Queue
+  enQueue(item) {
+    if (this.rear === Max_Size) {
+      console.log("Queue is full");
+      return false;
+    }
+    this.queue[this.rear++] = item;
+  }
+
+  // deQueue means remove entities in existing Queue
+
+  deQueue() {
+    if (this.rear === this.front) {
+      console.log("Queue is empty");
+      return false;
+    }
+    const item = this.queue[this.front];
+    for (let i = this.front; i < this.rear; i++) {
+      this.queue[i] = this.queue[i + 1];
+    }
+    delete this.queue[--this.rear];
+    return item;
+  }
+
+  showQueue() {
+    if (this.front === this.rear) {
+      console.log("Queue is empty");
+      return false;
+    }
+    for (let i = this.front; i < this.rear; i++) {
+      console.log("[Displaying ]", this.queue[i]);
+    }
+  }
+  next() {
+    if (this.front === this.rear) {
+      console.log("Queue is Empty");
+      return false;
+    }
+    return this.queue[this.front];
+  }
+  isEmpty() {
+    return this.front === this.rear;
+  }
+}
+
+const queue = new Queue();
+queue.enQueue(10);
+// queue.deQueue();
+
+console.log(queue.isEmpty());
