@@ -298,49 +298,49 @@
 
 // ----> Make a array desk
 
-const max_size = 10;
-class Stack {
-  constructor() {
-    this.list = new Array(max_size);
-    this.top = -1;
-  }
+// const max_size = 10;
+// class Stack {
+//   constructor() {
+//     this.list = new Array(max_size);
+//     this.top = -1;
+//   }
 
-  push(item) {
-    if (this.top >= max_size) {
-      console.log("stack overflow ");
-      return false;
-    } else {
-      this.list[++this.top] = item;
-      // console.log(this.list);
-      return true;
-    }
-  }
-  pop() {
-    if (this.isArrayEmpty()) {
-      console.log("stack underflow");
-      return false;
-    } else {
-      delete this.list[this.top];
-      this.top--;
-      // console.log("deleted:", this.top);
-      // console.log("popitem", this.list);
-      return this.list[++this.top];
-    }
-  }
-  peek() {
-    if (this.isArrayEmpty()) {
-      console.log("stack underflow");
-      return false;
-    } else {
-      return this.list[this.top];
-    }
-  }
-  isArrayEmpty() {
-    return this.top < 0 ? "true" : false;
-  }
-}
+//   push(item) {
+//     if (this.top >= max_size) {
+//       console.log("stack overflow ");
+//       return false;
+//     } else {
+//       this.list[++this.top] = item;
+//       // console.log(this.list);
+//       return true;
+//     }
+//   }
+//   pop() {
+//     if (this.isArrayEmpty()) {
+//       console.log("stack underflow");
+//       return false;
+//     } else {
+//       delete this.list[this.top];
+//       this.top--;
+//       // console.log("deleted:", this.top);
+//       // console.log("popitem", this.list);
+//       return this.list[++this.top];
+//     }
+//   }
+//   peek() {
+//     if (this.isArrayEmpty()) {
+//       console.log("stack underflow");
+//       return false;
+//     } else {
+//       return this.list[this.top];
+//     }
+//   }
+//   isArrayEmpty() {
+//     return this.top < 0 ? "true" : false;
+//   }
+// }
 
-module.exports = Stack;
+// module.exports = Stack;
 
 // Now crate instance of stack class
 // const homemadeArray = new stack();
@@ -359,3 +359,6 @@ module.exports = Stack;
 
 // ---> check aray is empty or not :
 // console.log(homemadeArray.isArrayEmpty());
+
+
+// The next project are arrived
